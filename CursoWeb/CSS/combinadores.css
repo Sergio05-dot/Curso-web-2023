@@ -1,0 +1,12 @@
+/* Todos los descendientes div
+ /* div p {
+    background-color: yellow;
+  } */
+ */
+/* Solo los elementos que sean hijos del div */
+ div > p {
+    background-color: rgb(109, 24, 190);
+}
+ div + p{
+background-color: aqua;
+}
