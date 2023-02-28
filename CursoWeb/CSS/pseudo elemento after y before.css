@@ -1,0 +1,13 @@
+p::after {
+    content: " - flecho";
+    background-color: rgb(255, 255, 0);
+    color: red;
+    font-weight: bold;
+    }
+
+    p::before {
+        content: "flecha -";
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
+        }

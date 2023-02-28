@@ -1,12 +1,16 @@
-/* Todos los descendientes div
- /* div p {
+/* Todos los descendientes div /* 
+div p {
     background-color: yellow;
-  } */
- */
+  } 
+
 /* Solo los elementos que sean hijos del div */
- div > p {
-    background-color: rgb(109, 24, 190);
-}
- div + p{
+/* div > p {
+    background-color: rgb(109, 24, 190); */
+
+/* hermanos adyacentes /* div + p{
 background-color: aqua;
-}
+} */
+
+/* general de hermanos /* div ~ p {
+    background-color: cornflowerblue;
+} */
