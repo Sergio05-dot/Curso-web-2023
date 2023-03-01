@@ -1,0 +1,16 @@
+/* Selector de descendientes */
+div h1  {
+    background-color: yellow;
+}
+/* Selector de child */
+div h2  {
+    background-color: rgb(242, 4, 4);
+}
+/* Selector de hermanos adyacentes */
+ div+h3.class {
+    background-color: rgb(0, 255, 17);
+}
+/* Selector general de hermanos */
+ div~h4.classo {
+    background-color: rgb(30, 0, 255);
+}

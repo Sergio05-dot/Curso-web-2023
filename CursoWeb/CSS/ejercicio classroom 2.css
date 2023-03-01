@@ -1,0 +1,33 @@
+h1,
+h2::before {
+    content: "Antes del texto -";
+
+    background-color: yellow;
+
+    color: red;
+
+    font-weight: normal;
+}
+
+h3::after {
+    content: "Despues del texto -";
+    background-color: brown;
+    color: cyan;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: large;
+    color: rgb(255, 0, 0);
+}
+
+p::first-line {
+    color: #000000;
+    font-variant: small-caps;
+}
+
+div::selection {
+    color: rgb(255, 255, 255);
+
+    background: rgb(21, 29, 143);
+}
