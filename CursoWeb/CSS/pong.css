@@ -1,0 +1,36 @@
+body {
+    align-items: center;
+}
+.game-container {
+    width: 600px;
+    height: 400px;
+    background-color: #ffffff;
+    position: relative;
+    
+  
+  }
+  
+  .paddle {
+    width: 20px;
+    height: 100px;
+    background-color: #000000;
+    position: absolute;
+  }
+  
+  #leftPaddle {
+    left: 0;
+  }
+  
+  #rightPaddle {
+    right: 0;
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    border-radius: 50%;
+    position: absolute;
+    left: 290px;
+    top: 190px;
+  }
