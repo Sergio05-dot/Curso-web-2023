@@ -25,3 +25,4 @@ var persona = {
         }
       };
       document.getElementById("objetocomplejo").innerHTML = person.fullName();
+      

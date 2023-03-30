@@ -14,12 +14,12 @@ function update() {
   ballY += ballSpeedY;
   ball.style.left = ballX + 'px';
   ball.style.top = ballY + 'px';
-  
+
   // Check if ball hits top or bottom
   if (ballY <= 0 || ballY + ball.offsetHeight >= gameContainer.offsetHeight) {
     ballSpeedY = -ballSpeedY;
   }
-  
+
   // Check if ball hits left or right paddle
   if (ballX <= leftPaddle.offsetLeft + leftPaddle.offsetWidth && ballY + ball.offsetHeight >= leftPaddle.offsetTop && ballY <= leftPaddle.offsetTop + leftPaddle.offsetHeight) {
     ballSpeedX = -ballSpeedX;
@@ -27,13 +27,13 @@ function update() {
   if (ballX + ball.offsetWidth >= rightPaddle.offsetLeft && ballY + ball.offsetHeight >= rightPaddle.offsetTop && ballY <= rightPaddle.offsetTop + rightPaddle.offsetHeight) {
     ballSpeedX = -ballSpeedX;
   }
-  
+
   // Check if ball goes out of bounds
   if (ballX < 0 || ballX + ball.offsetWidth > gameContainer.offsetWidth) {
     ballX = 290;
     ballY = 190;
   }
-  
+
   // Call update again
   window.requestAnimationFrame(update);
 }
@@ -51,11 +51,11 @@ gameContainer.addEventListener('mousemove', (event) => {
 
 // Move right paddle with arrow keys
 document.addEventListener('keydown', (event) => {
-    const arrow = event.key.replace('Arrow', '');
-    if (arrow === 'Up' && rightPaddle.offsetTop >= 0) {
-      rightPaddle.style.top = rightPaddle.offsetTop - 10 + 'px';
-    }
-    if (arrow === 'Down' && rightPaddle.offsetTop + rightPaddle.offsetHeight <= gameContainer.offsetHeight) {
-      rightPaddle.style.top = rightPaddle.offsetTop + 10 + 'px';
-    }
-  });
+  const arrow = event.key.replace('Arrow', '');
+  if (arrow === 'Up' && rightPaddle.offsetTop >= 0) {
+    rightPaddle.style.top = rightPaddle.offsetTop - 10 + 'px';
+  }
+  if (arrow === 'Down' && rightPaddle.offsetTop + rightPaddle.offsetHeight <= gameContainer.offsetHeight) {
+    rightPaddle.style.top = rightPaddle.offsetTop + 10 + 'px';
+  }
+});
