@@ -18,7 +18,7 @@ function generarNumeros() {
 
 function Trescolores() {
     let Colorines= '';
-    let Colores = ["Amarillo", "Azul", "Verde"]
+    let Colores   = ["Amarillo", "Azul", "Verde"]
     for(let Color of Colores ) {
         Colorines += Color + ' ';
     }
