@@ -1,0 +1,69 @@
+p {
+    font-size: 15px;
+  }
+  
+  /* Estilo para el botón de menú */
+  button {
+    padding: 6px;
+    background-color: #e90000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Estilo para el menú desplegable */
+  ul[role="menu"] {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    z-index: 1;
+  }
+  
+  /* Estilo para las opciones del menú */
+  li[role="menuitem"] {
+    padding: 8px;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  li[role="menuitem"]:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para el menú desplegable cuando está abierto */
+  button[aria-expanded="true"] + ul[role="menu"] {
+    display: block;
+  }
+  
+  /* ARIA para el botón de menú */
+  button[aria-expanded] {
+    /* Indica que el botón es un control para abrir/cerrar el menú */
+    aria-haspopup: "true";
+    /* Añade una etiqueta descriptiva para el botón */
+    aria-label: "Menú";
+    /* Añade información sobre el estado del menú (abierto o cerrado) */
+    aria-expanded: "false";
+  }
+  
+  /* ARIA para el menú desplegable */
+  ul[role="menu"] {
+    /* Indica que el elemento es un menú desplegable */
+    role: "menubar";
+  }
+  
+  /* ARIA para las opciones del menú */
+  li[role="menuitem"] {
+    /* Indica que el elemento es una opción del menú */
+    role: "menuitem";
+  }
+  
+  /* ARIA para el menú desplegable cuando está abierto */
+  button[aria-expanded="true"] + ul[role="menu"] {
+    /* Indica que el menú está abierto */
+    aria-expanded: "true";
+  }

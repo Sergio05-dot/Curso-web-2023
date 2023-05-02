@@ -23,3 +23,4 @@ function aumentarTamano() {
     var elemento = document.getElementById("canvia").innerHTML="Exercici 5 resolt";
     
   }
+  
